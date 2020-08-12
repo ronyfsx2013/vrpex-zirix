@@ -37,7 +37,7 @@ function emP.checkVehicle()
 			end
 			
 			randmoney = (math.random(1000,7000))
-			vRP.giveInventoryItem(user_id,"dinheiro-sujo",randmoney)
+			vRP.giveInventoryItem(user_id,"dinheiro-sujo",randmoney) and emP.checkPermission(v.perm) then
 			
 			return true
 		end
